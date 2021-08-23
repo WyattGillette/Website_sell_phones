@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body{
+    font-family: Consolas;
+}
+
+.side-bar{
+    background-color: #2b3246;
+    padding-top: 50px;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+
+.side-bar .name{
+    text-align: center;
+}
+
+.side-bar p{
+    color: #d26629;
+    font-weight: 900;
+    padding: 20px 0px;
+    border-bottom: 2px solid #8e8e8e99;
+}
+
+.side-bar .menu{
+    margin-top: 15px;
+}
+
+.side-bar a{
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    line-height: 70px;
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.side-bar a:hover{
+    background-color: #782c9a;
+}
+
+.side-bar i{
+    padding-right: 10px;
+}
+
+.content{
+    margin-left:250px;
+    background-color: #1a2034;
+    height: 200vh;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.form-login{
+	margin: 10px 25px 0px auto;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login .username{
+	color: #ffffff;
+}
+
+.form-login .logout-btn{
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Consolas;
+    border: 1px solid #ffffff00;
+    background: #ffffff00;
+}
+
+.logout-btn i{
+    padding-right: 10px;
+}
+
+.logout-btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+}
+
+.table-container{
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+.table-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px
+}
+
+.table-title h2{
+    padding: 10px 120px 10px 120px;
+    background-color: #83329e;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.table-body{
+    background-color: #20293f;
+    border-radius: 10px;
+    padding: 30px 20px 10px 20px;
+    z-index: 1;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.table tr,th{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding:10px 35px 10px 35px;
+}

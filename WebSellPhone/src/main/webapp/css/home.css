@@ -1,0 +1,189 @@
+@charset "ISO-8859-1";
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Consolas;
+	padding: 10px;
+	background: #f1f1f1;
+}
+
+.header{
+	padding: 30px;
+	background-color: #002750;
+	color: #ffffff;
+	display: grid;
+	grid-template-columns: 250px 75%;
+}
+
+.header-name{
+	text-align: center;
+}
+
+.header-name h1, p{
+	margin: 0px;
+}
+
+.search-bar{
+	margin: auto 0px auto 50px;
+	display: grid;
+	grid-template-columns: 15% 75% 50px;
+}
+
+#search-menu{
+    height: 40px;
+    margin-right: -1px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #dedede;
+    text-align-last: center;
+}
+
+.search-form input{
+    height: 40px;
+    padding-left: 40px;
+    width: 750px;
+}
+
+.search-form button{
+	margin-left: -10px;
+    background-color: #ffa12e;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    height: 100%;
+    width: 100px;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: #021a3e;
+}
+
+.topnav a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 40px;
+	text-decoration: none;
+}
+
+.topnav a:hover{
+	background-color: #dddddd;
+	color: black;
+}
+
+#product-container{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	text-align: center;
+}
+
+#products-container a{
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+#products-container p{
+	margin-bottom: 0px;
+}
+
+.products {
+   	list-style-type: none;
+   	display: grid;
+   	grid-template-columns: 33% 33% 33%;
+   	text-align: center;
+}
+
+.products a{
+	text-decoration: none;
+    color: #000000;
+}
+
+.products img{
+	width: 350px;
+	height: 350px;
+}
+
+.page-number {
+	text-align: center;
+}
+
+.page-number ul{
+	list-style-type: none;
+}
+
+.page-number li{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	padding: 5px;
+   	border: 5px solid #dedede;
+}
+
+.page-number a{
+	text-decoration: none;
+    font-size: 17px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.page-number li:hover{
+	background-color: #dedede;
+}
+
+footer {
+	background-color: #002750;
+}
+
+#footer-line {
+	height: 50px;
+	background-color: #021a3e;
+}
+
+#footer-information{
+    height: 120px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#footer-information p{
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 768px){
+	.header{
+		display: block;
+		
+	}
+	
+	.search-bar{
+		display: block;
+	}
+	
+	#search-menu{
+		width: 100%;
+		margin: 0px;
+		border-radius: 0px;
+	}
+	
+	.search-form input{
+		width: 100%;
+	}
+	
+	.search-form button{
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
+		border-radius: 0px;
+	}
+	
+	.topnav a{
+		float: none;
+		width: 100%;
+	}
+	
+	.products{
+		display: block;
+	}
+}
